@@ -7,11 +7,8 @@ def search_pairs(array, k):
             if second_number in array:
                 results.append((array[i], second_number))
                 already_used.extend([second_number, array[i]])
-        else:
-            continue
 
     return results
 
 
 print(search_pairs([1, 2, 6, 5, 3, 4, 7, 8, 3, 2], 5))
-
